@@ -1,0 +1,64 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+}
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+header {
+  padding: 0px 230px;
+  background-color: #000;
+}
+header .inner .icon {
+  float: left;
+  margin: 10px 0px;
+}
+header .inner .search {
+  float: right;
+  margin: 35px 0px;
+}
+header .inner .search a {
+  color: #fff;
+  border: 1px solid #000;
+  font-size: 12px;
+  padding: 8px;
+  background-color: #555;
+}
+main {
+  margin-top: 20px;
+  text-align: center;
+}
+main>div.wrapper {
+  display: inline-block;
+}
+main>div.wrapper div {
+  font-size: 12px;
+}
+main>div.wrapper div:nth-child(2) {
+  margin-left: 3em;
+}
+main>div.wrapper div:nth-child(3) {
+  margin-left: 6em;
+}
+main>div.wrapper div>kbd {
+  text-align: center;
+  border: 1px solid #000;
+  font-size: 2em;
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  text-transform: uppercase;
+  position: relative;
+}
+main>div.wrapper div>kbd button {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  display: none;
+}
+main>div.wrapper div>kbd:hover button {
+  display: inline-block;
+}
