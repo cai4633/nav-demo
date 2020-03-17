@@ -2,54 +2,131 @@
     padding 0px 
     margin 0px 
     text-decoration: none
+    font-family "Arial Rounded", Helvetica, Arial, sans-serif
 }
 .clearfix::after 
     display block
     content: ''
     clear both
 
+img[src=''],img:not([src]){
+    opacity 0
+}
+
+body
+    background:#fff url("https://s1.ax1x.com/2020/03/17/8NCzDI.png") repeat center center  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
 
 header 
     padding 0px 230px
     background-color #000
     .inner 
+        min-width 450px
         .icon 
             float left 
-            margin 10px 0px
+            margin 20px 0px
+            a
+                display block
+                img 
+                    display: block
+                    height 64px
         .search 
             float right
             margin 35px 0px
+            input 
+                height 18px
+                padding 8px 
+                background-color #e8f0fe
+                outline: none
+                border none
+                border-radius: 4px
+                vertical-align: top 
             a
                 color #fff
                 border 1px solid #000
                 font-size 12px
                 padding 8px
-                background-color #555555        
+                background-color #555
+                border-radius 4px  
+                display inline-block 
+                vertical-align: top 
+    .ornament
+        position: fixed
+        top -30px
+        right -30px
+
                 
 main
     margin-top 20px
     text-align center
+    min-width: 1230px
     &>div.wrapper 
         display inline-block
+        text-align left
+        margin-left 12px
         div
             font-size 12px
-            &:nth-child(2)
-                margin-left 3em
-            &:nth-child(3)
-                margin-left 6em
+            .long,.enter,.shift
+                width 120px
+                span 
+                    display inline-block
+                    vertical-align: top
+                    text-transform: lowercase
+                    font-size 16px
+                    padding 5px
+                    
+            .enter
+                width 138px
+            .shift
+                width 181px
+            .left
+                text-align left
+            .right
+                text-align right
+
             &>kbd
                 text-align: center
+                vertical-align top
                 border 1px solid #000
                 font-size 2em
                 display inline-block
-                width 3em
-                height 3em
+                padding 5px 10px
+                width 71px
+                box-sizing: border-box
+                background-color #000
+                color #fff
+                height 69px
                 text-transform: uppercase
                 position relative
+                margin 0 12px 12px 0
+                border-radius: 5px
+                box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5)
+                top 0
+                transition top 0.1s
+
+                img 
+                    display inline-block
+                    vertical-align: top
+                    position: absolute
+                    bottom 5px
+                    left 5px
+                    width 15px
+                    height 15px
+                    border-radius 50%
                 button
                     position: absolute
                     bottom 5px 
                     right 5px 
                     display: none
+                    transition: all 0.3s
                 &:hover button 
                     display: inline-block
+                &:active
+                    top 2px
+                    box-shadow:  2px 0 2px rgba(0,0,0,0.5)
+
+

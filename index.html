@@ -8,26 +8,26 @@
     <title>nav-demo</title>
 </head>
 <body>
-    <header class="clearfix">
-        <div class="inner">
-            <div class="icon">
+    <header class="">
+        <div class="inner clearfix">
+            <div class="icon" title='nav-demo'>
                 <a href="#">
                     <img src="search.jpg" alt="导航" width="73" height='64'>
                 </a>
             </div>
             <div class="search">
-                    <input type="text" name="keyword" id="keyword">
-                    <a href="https://baidu.com"  target="_blank" class="baidu">百度一下</a>
-                    <a href="https://google.com" target="_blank"  class="google">谷歌搜索</a>
+                        <input type="text" name="keyword" id="keyword">
+                        <a href="javascript:;"  target="" onclick="window.open('https://www.baidu.com/?wd='+keyword.value,'_blank')" class="baidu">百度一下</a>
+                        <a href="javascript:;" target=""  onclick="window.open('https://www.google.com/search?q='+keyword.value,'_blank')" class="google">谷歌搜索</a>
             </div>
         </div>
+        <div class="ornament"><img src="https://s1.ax1x.com/2020/03/17/8NCxKA.png" alt="ornament"></div>
     </header>
     <main>
         <div class="wrapper" id="root">
             
         </div>
     </main>
-    <footer></footer>
     <script src="main.js" type="text/javascript"></script>
 </body>
 </html>
